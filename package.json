@@ -1,0 +1,23 @@
+{
+  "name": "gitpub-deliverable",
+  "version": "1.0.0",
+  "description": "![](/ga_cog.png)",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/IanDLeon/gitPub-deliverable.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/IanDLeon/gitPub-deliverable/issues"
+  },
+  "homepage": "https://github.com/IanDLeon/gitPub-deliverable#readme",
+  "dependencies": {
+    "express": "^4.18.1",
+    "liquid-express-views": "^1.0.8"
+  }
+}
