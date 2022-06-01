@@ -24,6 +24,9 @@ app.get('/drinks', (req, res) => {
     )
 })
 
-app.get('/drinks/:id', (req, res) => {
-    res.send(req.params.id)
+app.get('/drinks/:indexOfDrinksArray', (req, res) => {
+    res.render('show',{
+        drink: drinks[req.params.indexOfDrinksArray]
+    })
 })
+
