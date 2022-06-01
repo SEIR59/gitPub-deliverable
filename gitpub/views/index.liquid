@@ -6,14 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<body>
 <style type='text/css'>
     body {
-        background-color: darkgreen;
-        color: white;
+        background-color: lightblue;
+        color: Black;
     }
 </style>
+<body>
     <h1 >Welcome to Gitpub</h1>
-
+    <ul>
+        {% for drink in allDrinks %}
+           <li>{{drink.name}} </li> 
+        {% endfor %}
+    </ul>
 </body>
 </html>
