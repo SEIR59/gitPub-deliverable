@@ -18,8 +18,11 @@
     <ul>
         {% for drink in allDrinks %}
     
-        <li>
-            {{drink.name | capitalize}}
+        <li><a href ="/drinks/{{forloop.index0}}">
+            
+           
+            
+            {{drink.name | capitalize}}</a>
 
         </li>
         {% endfor%}
