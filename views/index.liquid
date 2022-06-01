@@ -20,7 +20,7 @@
         <li>
             {% assign drinkName = drink.name %}
 
-            {{ drinkName | capitalize }}
+            <a href="/drinks/{{ forloop.index0 }}">{{ drinkName | capitalize }}</a>
         </li>
         {% endfor %}
     </ul>
