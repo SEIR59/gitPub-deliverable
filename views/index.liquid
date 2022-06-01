@@ -17,6 +17,7 @@
 <ul>
     {% for drink in alldrinks %}
  <li>
+    <a href="/drinks/{{ forloop.index0}}">{{ drink.name }}</a>
        {{drink.name|capitalize}}
        </li>
     {% endfor %}
