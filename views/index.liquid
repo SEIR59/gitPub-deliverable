@@ -16,11 +16,11 @@
     </style>
     <h1>Welcome to the gitPub!</h1>
     <ul>
-        {%for drink in drinks%}
-            <li>{{drink.name}}
-    </li>
+    {%for drink in drinks%}
+        <li>{{drink.name | capitalize}}
+        </li>
 
-{% endfor%}
+    {% endfor%}
     </ul>
 </body>
 </html>

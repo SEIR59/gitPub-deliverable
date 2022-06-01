@@ -41,14 +41,12 @@ const drinks = [
     },
   ]
 
-
-
-for (let i = 0; i < drinks.length; i++){
-    let drinkStr = drinks[i].name
-    let drinkCap = drinkStr.charAt(0).toUpperCase() + drinkStr.slice(1)
-    console.log(drinkCap)
-    drinks[i].name = drinkCap
-}
+// for (let i = 0; i < drinks.length; i++){
+//     let drinkStr = drinks[i].name
+//     let drinkCap = drinkStr.charAt(0).toUpperCase() + drinkStr.slice(1)
+//     // console.log(drinkCap)
+//     drinks[i].name = drinkCap
+// }
 
 
   module.exports = drinks
