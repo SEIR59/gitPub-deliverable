@@ -7,7 +7,10 @@ app.get('/',(req,res)=>{
 })
 
 app.get('/drinks',(req,res)=>{
-    res.send(drinks)
+    res.render('index.liquid'),
+    {
+        
+    }
 })
 
 app.listen(3000, () => {
