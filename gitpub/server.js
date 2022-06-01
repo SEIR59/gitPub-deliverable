@@ -28,8 +28,8 @@ app.get("/drinks", (req, res) => {
 
 // 
 app.get("/drinks/:id", (req, res) => {
-    res.send(req.params.id)
-    // res.render("index",{drink: arrCapDrinks})
+    let drinkIndex = req.params.id
+    res.render("show",{drink: arrCapDrinks[drinkIndex]})
 })
 
 // make sure the server is up and listening

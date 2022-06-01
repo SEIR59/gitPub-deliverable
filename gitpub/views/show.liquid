@@ -6,6 +6,12 @@
         background-color: lightblue;
         color: darkcyan;
     }
+    img {
+        height: 250px;
+        width: 250px;
+        border: 2px solid rgb(40, 138, 171);
+        border-radius: 10px;
+    }
 </style>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -13,14 +19,10 @@
     <title>Drink</title>
 </head>
 <body>
-    <h1>Welcome to my Gitpub!</h1>
-    <ul>
-        {% for drink in allDrinks %}
-
-        <li>
-            {{drink.name}}
-        </li> 
-        {% endfor %}
-    </ul>
+    <h1>At foo bar</h1>
+    <h2>{{drink.name}}</h2>
+    <img src="{{drink.image}}.png" alt="A picture of the {{drink.name}}">
+    <h3>{{drink.price}}</h3>
+    <a href="/drinks/">Back to menu <<</a>
 </body>
 </html>
