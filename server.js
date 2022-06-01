@@ -21,7 +21,16 @@ app.get('/drinks', (req, res) => {
 });
 
 app.get('/drinks/:id', (req, res) => {
-    res.render('show', {id: req.params.id});
+    const updatedDrinks = drinks.map((drink) => {
+        const result = drink.name.replace(
+          drink.name[0],
+          drink.name.charAt(0).toUpperCase()
+        );
+        drink.image = `${drink.image}.png`
+        drink.name = result;
+        return drink;
+      });
+      res.render('show', { updatedDrinks });
   });
 
 app.listen(port, () => {
