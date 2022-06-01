@@ -20,6 +20,10 @@ app.get('/drinks', (req, res) => {
   res.render('index', { drinks:updatedDrinks });
 });
 
+app.get('/drinks/:id', (req, res) => {
+    res.render('show', {id: req.params.id});
+  });
+
 app.listen(port, () => {
   console.log(`listening on port ${port}`);
 });
