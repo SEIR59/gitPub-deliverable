@@ -5,6 +5,7 @@
     body {
       background-color:black;
       color: white;
+      font-size: larger;
     }
   </style>
 </head>
@@ -13,12 +14,12 @@
     <ul> {%for drink in drinksList%}
         <li>
         
-            <a href="/drinks/{{ forloop.index0 }}">{{ drink.name }}</a>
-        
+           
+         <a href="/drinks/{{ forloop.index0 }}">{{ drink.name }}</a>
         </li>
         {%endfor%}
 
     </ul>
-
+   
 </body>
 </html>

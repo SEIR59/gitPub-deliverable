@@ -14,7 +14,11 @@ app.get('/drinks',(req,res)=>{
 })
 
 app.get('/drinks/:id', (req,res)=>{
-    res.send(req.params.id)
+
+    res.render('show',
+    {
+        drinkList:drinks[req.params.id]
+    })
 })
 
 
