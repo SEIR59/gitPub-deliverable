@@ -1,5 +1,6 @@
 const express = require('express')
 const app = require("liquid-express-views")(express())
+const drinks = require('./models/drinks')
 
 
 app.get('/', (req, res)=> {
