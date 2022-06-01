@@ -8,10 +8,11 @@
 </head>
 <body>
   <h1>Welcome to gitPub</h1>
+  
   <ul>
     {% for tragos in drinks %}
     <li>
-      <a href =/menu/drink/{{forloop.index0}}> {{tragos.name | capitalize}}</a>
+      <a href="/drinks/{{forloop.index0}}"> {{tragos.name}} </a>
     </li>
     {% endfor %}
   </ul>
