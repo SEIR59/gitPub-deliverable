@@ -26,5 +26,7 @@ app.get('/drinks', (request, response) => {
 
 // drinks route
 app.get('/drinks/:id', (request, response) => {
-    response.send(request.params.id)
+    response.render('show', {
+        drink: drinks[request.params.id]
+    })
 })

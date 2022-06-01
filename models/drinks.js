@@ -47,4 +47,9 @@ for (let i = 0; i < drinks.length; i++){
   drinks[i].name = drinks[i].name[0].toUpperCase() + restName
 }
 
+for (let j = 0; j < drinks.length; j++){
+  let png = ".png"
+  drinks[j].image = drinks[j].image + png
+}
+
 module.exports = drinks
