@@ -40,5 +40,14 @@ const drinks = [
     image: "https://imgur.com/MbVdwZz",
   },
 ];
+//const capitalizeNames = drinksArray => drinksArray.map(name => name.split(' ').map(letter => letter[0].toUpperCase() + letter.slice(1).toLowerCase()).join(' ')
+//)
+//const capitalizedNames = capitalizeNames(drinks)
+//console.log(capitalizedNames)
 
-module.exports = drinks
+for (const drink of drinks) {
+  let drinkCap = drink.name.charAt(0).toUpperCase() + drink.name.slice(1);
+  console.log(drinkCap);
+  drink.name = drinkCap;
+}
+module.exports = drinks;

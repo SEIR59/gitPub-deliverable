@@ -7,7 +7,9 @@ app.get("/", (req, res) => {
 })
 
 app.get("/drinks", (req, res) => {
-  res.render("index.liquid")
+  res.render("index.liquid", {
+  drinks: drinks,
+  })
 })
 
 app.listen(3000, () => {
