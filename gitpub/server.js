@@ -12,7 +12,13 @@ app.get("/", (req, res) => {
 // route will display all drinks and info
 app.get("/drinks", (req, res) => {
     // res.send(drinks)
-    res.render("index",{allDrinks: drinks})
+    let arrDrinks = drinks
+    // change array to capitalize the first letter of each name
+    for (let i = 0; i < drinks.length; i++) {
+        let currentDrink = arrDrinks[i].name
+        arrDrinks[i].name = currentDrink.charAt(0).toUpperCase() + currentDrink.slice(1)
+    }
+    res.render("index",{allDrinks: arrDrinks})
 })
 
 // make sure the server is up and listening

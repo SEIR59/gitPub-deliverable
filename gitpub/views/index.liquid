@@ -14,7 +14,13 @@
 </head>
 <body>
     <h1>Welcome to my Gitpub!</h1>
-    
-    
+    <ul>
+        {% for drink in allDrinks %}
+
+        <li>
+            {{drink.name}}
+        </li> 
+        {% endfor %}
+    </ul>
 </body>
 </html>
