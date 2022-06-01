@@ -8,13 +8,16 @@ app.get("/", (req, res) => {
 
 app.get("/drinks", (req, res) => {
   res.render("index.liquid", {
-  drinks: drinks,
+  drinks: drinks
   })
 })
 
-app.get("/drinks/:id", (req, res) => {
-  res.send(req.params.id)
-})
+//app.get("/drinks/:id", (req, res) => {
+  //res.render('show', {id: req.params.id})
+//})
+app.get("/drinks/:indexOfDrinksArray", (req,res)=>{
+  res.render("show", {id:drinks[req.params.indexOfDrinksArray]})
+  })
 
 app.listen(3000, () => {
   console.log("I hear you")
