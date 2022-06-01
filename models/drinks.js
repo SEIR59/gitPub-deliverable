@@ -42,13 +42,13 @@ const drinks = [
   ];
 
 
-  let drinksUp = []
+  // let drinksUp = []
 
 
-  for (const drink of drinks){
-      let drinkUp = drink.name.charAt(0).toUpperCase() + drink.name.slice(1);
-      console.log(drinkUp)
-      drink.name = drinkUp
-  }
+  // for (const drink of drinks){
+  //     let drinkUp = drink.name.charAt(0).toUpperCase() + drink.name.slice(1);
+  //     console.log(drinkUp)
+  //     drink.name = drinkUp
+  // }
 
   module.exports = drinks;

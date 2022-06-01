@@ -18,13 +18,13 @@
     <h2>Drinks</h2>
     <ul>
     {% for drink in allDrinks%}
-        <li><a href =/menu/drink/{{forloop.index0}}>{{drink.name}}</a></li>
+        <li><a href =/menu/drink/{{forloop.index0}}>{{drink.name | capitalize}}</a></li>
     {% endfor%}
     </ul> 
     <h2>Food</h2>
     <ul>
     {% for food in allFoods%}
-        <li><a href =/menu/food/{{forloop.index0}}>{{food.name}}</a></li>
+        <li><a href =/menu/food/{{forloop.index0}}>{{food.name | capitalize}}</a></li>
     {% endfor %}
     </ul>
 </body>
