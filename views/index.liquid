@@ -3,8 +3,14 @@
   <head>
     <style>
       body {
-        background-color: lightcyan;
+        background-color: lightblue;
         font-size: medium;
+        color: white;
+      }
+      a {
+        color: gold;
+        font-size: x-large;
+        font-weight: 800;
       }
     </style>
     <meta charset="UTF-8" />
@@ -16,11 +22,22 @@
     <h1>Welcome to gitPub</h1>
 
     <ul>
-        {% for drink in drinks %}
-        <li>
-            <a href="/drinks/{{ forloop.index0 }}">{{ drink.name | capitalize }}</a>
-        </li>
-        {% endfor %}
+      {% for drink in drinks %}
+      <li>
+        <a href="/drinks/{{ forloop.index0 }}">{{ drink.name | capitalize }}</a>
+      </li>
+      {% endfor %}
+    </ul>
+
+    <br />
+    <br />
+
+    <ul>
+      {% for drink in drinks %}
+      <li>
+        <a href="/drinks/{{ forloop.index0 }}">{{ drink.name | capitalize }}</a>
+      </li>
+      {% endfor %}
+    </ul>
   </body>
 </html>
-
