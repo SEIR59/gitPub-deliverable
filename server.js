@@ -12,9 +12,11 @@ app.get('/',  (req,res) => {
 
 app.get('/drinks' , (req,res) =>{
     res.render ('index', 
-    {alldrinks:drinks})
+    {alldrinks:drinks}
+)
 })
 
 app.get('/drinks/:id' , (req,res) =>{
-    res.send(req.params.id)
+    res.render('show',
+        {drink: drinks[req.params.id]})
 })
