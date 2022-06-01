@@ -15,5 +15,14 @@
 <body>
     <h1>Welcome to gitPub!</h1>
 
+    <ul>
+        {% for drink in allDrinks %}
+        <li>
+            {% assign drinkName = drink.name %}
+
+            {{ drinkName | capitalize }}
+        </li>
+        {% endfor %}
+    </ul>
 </body>
 </html>
