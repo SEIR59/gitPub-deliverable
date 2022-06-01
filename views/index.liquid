@@ -9,8 +9,8 @@
 <h1> Welcome to gitPub</h1>
 <style type="text/css">
         body {
-          color: blanchedalmond;
-          background-color: steelblue;
+          color: green;
+          background-color: white;
         }
       </style>
 <body>
@@ -23,8 +23,13 @@
     {% endfor %}
 
 </ul>
-
-
+<ul>    {% for food in allfood %}
+    <li>
+       <a href="/food/{{ forloop.index0}}">
+          {{food.name|capitalize}}</a>
+          </li>
+       {% endfor %}
+   
 </ul>
     
 </body>
