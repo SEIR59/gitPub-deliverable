@@ -42,3 +42,7 @@ const drinks = [
   ];
 
   module.exports = drinks
+  
+//   for (let i = 0; i < drinks.length; i++){
+//        drinks.charAt(0).toUpperCase() + drinks.slice(1)
+//   }

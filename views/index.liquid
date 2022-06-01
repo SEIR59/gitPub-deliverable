@@ -7,12 +7,24 @@
     <title>Document</title>
 </head>
 <h1> Welcome to gitPub</h1>
-<body>
-    <style type="text/css">
+<style type="text/css">
         body {
           color: blanchedalmond;
           background-color: steelblue;
         }
       </style>
+<body>
+<ul>
+    {% for drink in alldrinks %}
+ <li>
+       {{drink.name|capitalize}}
+       </li>
+    {% endfor %}
+
+</ul>
+
+
+</ul>
+    
 </body>
 </html>
