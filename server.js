@@ -23,3 +23,8 @@ app.get('/drinks', (request, response) => {
         drinksList: drinks
     })
 })
+
+// drinks route
+app.get('/drinks/:id', (request, response) => {
+    response.send(request.params.id)
+})
