@@ -14,13 +14,9 @@
       }
     </style>
     <h1>At foo bar</h1>
-    <ul>
-      {% for drink in updatedDrinks %}
-      <h2>{{ drink.name }}</h2>
-      <img src="{{ drink.image }}" alt="" />
-      <h3>{{ drink.price }}</h3>
-      {% endfor %}
-    </ul>
+    <h2>{{ drink.name }}</h2>
+    <img src="{{ drink.image }}" alt="" />
+    <h3>{{ drink.price }}</h3>
     <a href="/drinks">Back</a>
   </body>
 </html>

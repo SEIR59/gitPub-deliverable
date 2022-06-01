@@ -21,6 +21,7 @@ app.get('/drinks', (req, res) => {
 });
 
 app.get('/drinks/:id', (req, res) => {
+    let id = req.params.id;
     const updatedDrinks = drinks.map((drink) => {
         const result = drink.name.replace(
           drink.name[0],
@@ -30,7 +31,7 @@ app.get('/drinks/:id', (req, res) => {
         drink.name = result;
         return drink;
       });
-      res.render('show', { updatedDrinks });
+      res.render('show', { drink: updatedDrinks[id] });
   });
 
 app.listen(port, () => {
