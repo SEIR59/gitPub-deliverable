@@ -16,7 +16,7 @@
         <h1>List of Drinks</h1>
         <ul>
             {% for drink in drinksList%}
-                <li>{{drink.name}}</li>
+                <li><a href="/drinks/{{drink.name}}">{{drink.name}}</a></li>
             {% endfor %}
         </ul>
     
