@@ -14,3 +14,7 @@ app.get('/drinks' , (req,res) =>{
     res.render ('index', 
     {alldrinks:drinks})
 })
+
+app.get('/drinks/:id' , (req,res) =>{
+    res.send(req.params.id)
+})
