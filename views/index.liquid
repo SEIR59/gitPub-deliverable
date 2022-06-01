@@ -11,9 +11,16 @@
         body {
         background-color: #9CAF88;
         color: white;
-        text-align: center;
+        {% comment %} text-align: center; {% endcomment %}
     }
     </style>
     <h1>Welcome to the gitPub!</h1>
+    <ul>
+        {%for drink in drinks%}
+            <li>{{drink.name}}
+    </li>
+
+{% endfor%}
+    </ul>
 </body>
 </html>
