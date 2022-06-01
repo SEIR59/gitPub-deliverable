@@ -12,13 +12,43 @@
         color: blanchedalmond;
         background-color: steelblue;
       }
+
+      li {
+        list-style-type: none;
+      }
+
+      a {
+        text-decoration: none;
+        color: white;
+        padding: 2px;
+      }
+
+      a:hover {
+        background-color: blue;
+      }
     </style>
     <h1>Welcome to gitPub</h1>
+    <br />
+    <h2>Drinks</h2>
     <ul>
       {% for drink in drinks %}
       <li>
-        <a href="drinks/{{ forloop.index0 }}">{{ drink.name }}</a>
+        <a
+          href="drinks/{{ forloop.index0 }}"
+          >{{ drink.name | | capitalize }}</a
+        >
       </li>
+      <br />
+      {% endfor %}
+    </ul>
+    <br />
+    <h2>Food</h2>
+    <ul>
+      {% for food in foods %}
+      <li>
+        <a href="foods/{{ forloop.index0 }}">{{ food.name | capitalize }}</a>
+      </li>
+      <br />
       {% endfor %}
     </ul>
   </body>
