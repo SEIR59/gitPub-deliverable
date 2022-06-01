@@ -13,7 +13,13 @@
     </style>
 </head>
 <body>
-
     <h1>Welcome to Gitpub</h1>
+    <ul>
+        {% for drinks in allDrinks%}
+        <li style="text-transform:capitalize">
+            {{drinks.name}}
+        </li>
+        {%endfor%}
+    </ul>
 </body>
 </html>
