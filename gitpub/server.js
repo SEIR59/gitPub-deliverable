@@ -8,7 +8,9 @@ app.get('/drinks', (req, res)=> {
 app.get('/', (req, res)=>{
     res.send('Welcome to the Gitpub App!')
 })
-
+app.get('/drinks/:id', (req, res)=>{
+    res.send(req.params.id)
+})
 
 app.listen(3000, () => {
     console.log('Welcome to Gitpub App!')
