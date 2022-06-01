@@ -11,7 +11,11 @@
 <body>
     <h1>Welcome to Gitpub</h1>
     <ul> {%for drink in drinksList%}
-        <li>{{drink.name}}</li>
+        <li>
+        
+            <a href="/drinks/{{ forloop.index0 }}">{{ drink.name }}</a>
+        
+        </li>
         {%endfor%}
 
     </ul>
