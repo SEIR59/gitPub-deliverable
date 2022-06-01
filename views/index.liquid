@@ -7,17 +7,29 @@
     <title>Document</title>
     <style>
         body{
-            background-color: darkslategray;
+            background-image: url(https://images.pexels.com/photos/941864/pexels-photo-941864.jpeg?cs=srgb&dl=pexels-chan-walrus-941864.jpg&fm=jpg);
             color: lightcoral;
+            background-size:cover;
+        }
+        li{
+            text-transform:capitalize;
+            font-size: 30px;
+            background-color:darkgray;
+            
+            
+        }
+        h1{
+            font-size: 60px;
+            background-color: darkgray;
         }
     </style>
 </head>
 <body>
-    <h1>Welcome to Gitpub</h1>
+    <h1 style="text-align: center">Welcome to Gitpub</h1>
     <ul>
         {% for drinks in allDrinks%}
-        <li style="text-transform:capitalize">
-            <a href="/drinks/{{forloop.index0}}">{{drinks.name}}</a> 
+        <li>
+            <a href="/drinks/{{forloop.index0}}">{{drinks.name}}: </a>{{drinks.price}}
         </li>
         {%endfor%}
     </ul>
