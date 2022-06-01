@@ -18,5 +18,5 @@ app.get('/', (request, response) => {
 
 // displaying drinks
 app.get('/drinks', (request, response) => {
-    response.send(drinks)
+    response.render('index')
 })
