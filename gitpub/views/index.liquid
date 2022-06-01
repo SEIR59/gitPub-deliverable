@@ -15,5 +15,13 @@
             </style>
         <h1>Welcome to gitPub</h1>
 
+        <ul>
+            {% for d in drinks %}
+                <li>
+                    {{d.name | capitalize}} 
+                </li>
+            {% endfor %}
+
+        </ul>
     </body>
     </html>
