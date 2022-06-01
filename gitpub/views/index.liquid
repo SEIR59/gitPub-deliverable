@@ -10,14 +10,16 @@
     body {
         background-color: lightblue;
         color: Black;
+        text-align: center;
+        text-decoration: none;
     }
 </style>
 <body>
     <h1 >Welcome to Gitpub</h1>
     <ul>
         {% for drink in allDrinks %}
-           <li>{{drink.name.| capitalize}} 
-           <a href="/drinks/{{forloop.index0}}">{{drink.name}}</a> 
+           <li>
+           <a href="/drinks/{{forloop.index0}}">{{drink.name| capitalize}}</a> 
             </li>
           
         {% endfor %}
