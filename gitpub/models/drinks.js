@@ -40,4 +40,9 @@ const drinks = [
       image: "https://imgur.com/MbVdwZz",
     },
   ];
+  for(let i = 0; i < drinks.length; i++){
+  let drinkCap = drinks[i].name.charAt(0).toUpperCase() + drinks[i].name.slice(1)
+  drinks[i].name = drinkCap
+ 
+  }
 module.exports = drinks  
