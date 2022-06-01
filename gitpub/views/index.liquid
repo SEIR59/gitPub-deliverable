@@ -2,10 +2,53 @@
 <html lang="en">
 <head>
 <style>
-    body {
-        background-color: lightblue;
-        color: darkcyan;
+    *,
+    *::before,
+    *::after {
+        margin: 0;
+        padding: 0;
     }
+    body {
+        margin: 30px 50px;
+        background-color: rgb(114, 160, 197);
+        color: rgb(0, 0, 0);
+        user-select: none;
+    }
+    h1 {
+        margin-bottom: 30px;
+        text-align: center;
+        font-size: 48px;
+    }
+    h2 {
+        margin-bottom: 10px;
+        font-size: 36px;
+    }
+    ul {
+        list-style: none;
+    }
+    li {
+        /* margin-bottom: 15px;  */
+        padding: 5px 10px;
+        width: 200px;
+        background-color:;
+        box-shadow:;
+        transition: 
+        color ease-in-out 250ms,
+        background-color ease-in-out 250ms,
+        box-shadow ease-in-out 250ms
+    }
+    li:hover {
+        background-color: rgb(35, 72, 181);
+        box-shadow: inset 0 0 3px 2px rgb(10, 50, 168);
+        color: rgb(22, 67, 188);
+    }
+    a {
+        width: 200px;
+        text-decoration: none;
+        color: rgb(255, 255, 255);
+        font-size: 24px;
+    }
+
 </style>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -14,6 +57,7 @@
 </head>
 <body>
     <h1>Welcome to my Gitpub!</h1>
+    <h2>Drink Menu</h2>
     <ul>
         {% for drink in allDrinks %}
 
