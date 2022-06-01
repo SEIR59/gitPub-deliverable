@@ -9,7 +9,7 @@ app.get('/', (req, res)=>{
     res.send('Welcome to the Gitpub App!')
 })
 app.get('/drinks/:id', (req, res)=>{
-    res.send(req.params.id)
+    res.render('show', {drink: drinks[req.params.id]})
 })
 
 app.listen(3000, () => {
