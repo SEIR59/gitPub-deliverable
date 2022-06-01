@@ -14,5 +14,15 @@
   </head>
   <body>
     <h1>Welcome to gitPub!</h1>
+
+    <ul>
+      {% for drinks in allDrinks %}
+      <li>
+        <a href="/drinks/{{ forloop.index0 }}">{{
+          drinks.name | capitalize
+        }}</a>
+      </li>
+      {% endfor %}
+    </ul>
   </body>
 </html>
