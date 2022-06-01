@@ -16,7 +16,7 @@
     <h1 >Welcome to Gitpub</h1>
     <ul>
         {% for drink in allDrinks %}
-           <li>{{drink.name}} </li> 
+           <li>{{drink.name.| capitalize}} </li> 
         {% endfor %}
     </ul>
 </body>

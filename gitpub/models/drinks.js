@@ -40,5 +40,10 @@ const drinks = [
       image: "https://imgur.com/MbVdwZz",
     },
   ];
-  
+
+// for (let i = 0; i < drinks.length; i++){
+// drinks[i].name.charAt(0).toUppercase() + drinks[i].name.slice(1)
+// console.log(drinks[i].name.charAt(0).toUppercase())
+// }
+
 module.exports = drinks;
