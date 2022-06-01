@@ -9,7 +9,7 @@ app.get('/', (req, res) => {
 })
 
 app.get('/drinks', (req, res) => {
-    res.render('index.liquid', drinks)
+    res.render('index.liquid', {allDrinks: drinks})
 })
 
 app.listen(port, () => {
