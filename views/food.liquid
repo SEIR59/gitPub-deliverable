@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <style>
+      body {
+        background-color: lightblue;
+        color: white;
+      }
+      a {
+        font-size: medium;
+        color: gold;
+        font-weight: 800;
+      }
+    </style>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Food</h1>
+    <h2>Name: {{ food.name }}</h2>
+    <img src="{{ food.image }}.png" alt="{{ food.name }}" />
+    <h3>Price: {{ food.price }}</h3>
+    <a href="/drinks">Back</a>
+  </body>
+</html>

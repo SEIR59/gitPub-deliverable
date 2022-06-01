@@ -33,9 +33,9 @@
     <br />
 
     <ul>
-      {% for drink in drinks %}
+      {% for item in food %}
       <li>
-        <a href="/drinks/{{ forloop.index0 }}">{{ drink.name | capitalize }}</a>
+        <a href="/food/{{ forloop.index0 }}">{{ item.name | capitalize }}</a>
       </li>
       {% endfor %}
     </ul>

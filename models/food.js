@@ -35,3 +35,5 @@ const food = [
     image: "https://imgur.com/QZW3gJg",
   },
 ];
+
+module.exports = food;
