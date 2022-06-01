@@ -8,3 +8,6 @@ app.listen(3000,()=>{
 })
 
 
+app.get('/drinks/',(req,res) => {
+    res.send(drinks)
+})

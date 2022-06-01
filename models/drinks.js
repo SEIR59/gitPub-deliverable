@@ -1,3 +1,5 @@
+
+
 const drinks = [
     {
       name: "cruddy mary",
@@ -42,4 +44,6 @@ const drinks = [
   ];
 
 
-  module.export = drinks
+  module.exports = drinks
+
+
