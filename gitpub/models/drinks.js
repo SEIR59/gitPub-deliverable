@@ -41,4 +41,14 @@ const drinks = [
     },
   ];
 
+
+
+    for (let i = 0; i < drinks.length; i++){
+        let capName = drinks[i].name.slice(1)
+        drinks[i].name = drinks[i].name.charAt(0).toUpperCase() + capName
+      }
+
+
   module.exports = drinks
+
+  
