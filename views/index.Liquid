@@ -14,5 +14,11 @@
     </head>
     <body>
         <h1>List of Drinks</h1>
+        <ul>
+            {% for drink in drinksList%}
+                <li>{{drink.name}}</li>
+            {% endfor %}
+        </ul>
+    
     </body>
 </html>

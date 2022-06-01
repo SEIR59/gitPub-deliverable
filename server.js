@@ -18,5 +18,8 @@ app.get('/', (request, response) => {
 
 // displaying drinks
 app.get('/drinks', (request, response) => {
-    response.render('index')
+    response.render('index', 
+    {
+        drinksList: drinks
+    })
 })

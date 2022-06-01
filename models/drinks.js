@@ -1,4 +1,4 @@
-const drinks = [
+let drinks = [
     {
       name: "cruddy mary",
       price: 132,
@@ -39,6 +39,12 @@ const drinks = [
       price: 56,
       image: "https://imgur.com/MbVdwZz",
     },
-  ];
+];
+
+
+for (let i = 0; i < drinks.length; i++){
+  let restName = drinks[i].name.slice(1)
+  drinks[i].name = drinks[i].name.charAt(0).toUpperCase() + restName
+}
 
 module.exports = drinks
