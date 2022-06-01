@@ -7,11 +7,13 @@ app.get('/',(req,res)=>{
 })
 
 app.get('/drinks',(req,res)=>{
-    res.render('index.liquid'),
+    res.render('index.liquid',
     {
-        
-    }
+        drinksList:drinks
+    })
 })
+
+
 
 app.listen(3000, () => {
     console.log("Hello World")

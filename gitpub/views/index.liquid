@@ -10,6 +10,11 @@
 </head>
 <body>
     <h1>Welcome to Gitpub</h1>
+    <ul> {%for drink in drinksList%}
+        <li>{{drink.name}}</li>
+        {%endfor%}
+
+    </ul>
 
 </body>
 </html>
