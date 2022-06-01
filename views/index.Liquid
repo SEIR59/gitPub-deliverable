@@ -16,7 +16,9 @@
         <h1>List of Drinks</h1>
         <ul>
             {% for drink in drinksList%}
-                <li><a href="/drinks/{{forloop.index0}}">{{drink.name}}</a></li>
+                <li><a href="/drinks/{{forloop.index0}}">
+                    {% assign lastindex = drink.name.length %}
+                    {{drink.name | slice: 0 | upcase}}{{drink.name | slice: 1, lastindex}}</a></li>
             {% endfor %}
         </ul>
     </body>

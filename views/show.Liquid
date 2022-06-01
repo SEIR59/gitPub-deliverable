@@ -14,8 +14,10 @@
     </head>
     <body>
         <h1>At foo bar</h1>
-        <h2>{{drink.name}}</h2>
-        <img src={{drink.image}} alt="image" width="300" height="auto">
+        <h2> {% assign lastindex = drink.name.length %}
+            {{drink.name | slice: 0 | upcase}}{{drink.name | slice: 1, lastindex}}
+        </h2>
+        <img src={{drink.image | append: '.png'}} alt="image" width="300" height="auto">
         <h3>Price: ${{drink.price}}</h3>
         <a href="/drinks">Home</a>
     </body>
