@@ -2,7 +2,7 @@ const express = require('express')
 const app = require("liquid-express-views")(express())
 const drinks = require('./models/drinks.js')
 app.get('/drinks', (req, res)=> {
-    res.send(drinks)
+    res.render('index', {allDrinks:drinks})
 })
 
 app.get('/', (req, res)=>{
