@@ -66,5 +66,14 @@
         </li> 
         {% endfor %}
     </ul>
+    <h2>Food Menu</h2>
+    <ul>
+        {% for food in allFoods %}
+
+        <li>
+            <a href="/foods/{{forloop.index0}}">{{food.name}}</a>
+        </li> 
+        {% endfor %}
+    </ul>
 </body>
 </html>

@@ -3,6 +3,7 @@ const app = require("liquid-express-views")(express())
 const port = 3000
 
 const drinks = require("./models/drinks.js")
+const foods = require("./models/food.js")
 // function to capitalize the first letter of each drink name. returns NEW array.
 const capArrNames = (arrayObjs) => {
     // change array to capitalize the first letter of each name
@@ -23,13 +24,21 @@ app.get("/", (req, res) => {
 
 // route will display all drinks and info
 app.get("/drinks", (req, res) => {
-    res.render("index",{allDrinks: arrCapDrinks})
+    res.render("index",{
+        allDrinks: arrCapDrinks,
+        allFoods: foods,
+    })
 })
 
-// 
+// route for individual drinks
 app.get("/drinks/:id", (req, res) => {
     let drinkIndex = req.params.id
-    res.render("show",{drink: arrCapDrinks[drinkIndex]})
+    res.render("show",{item: arrCapDrinks[drinkIndex]})
+})
+// route for individual foods
+app.get("/foods/:id", (req, res) => {
+    let foodIndex = req.params.id
+    res.render("show",{item: foods[foodIndex]})
 })
 
 // make sure the server is up and listening
