@@ -9,8 +9,10 @@ app.get("/", (req, res) => {
     res.send("Welcome to the Gitpub App!")
 })
 
+// route will display all drinks and info
 app.get("/drinks", (req, res) => {
-    res.send(drinks)
+    // res.send(drinks)
+    res.render("index",{allDrinks: drinks})
 })
 
 // make sure the server is up and listening
