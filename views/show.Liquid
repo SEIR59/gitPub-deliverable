@@ -11,6 +11,8 @@
       body {
         color: blanchedalmond;
         background-color: steelblue;
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 25px;
       }
     </style>
     <h1>At foo bar</h1>
@@ -24,7 +26,7 @@
       </ul>
     </h2>
     <img src={{ bar.image | append: '.png'}}alt="images" width="200" height="200"/>
-    <h3>Price: ${{ drink.price }}</h3>
+    <h3>Price: ${{ bar.price }}</h3>
     <a href="/drinks">Back</a>
   </body>
 </html>
