@@ -8,16 +8,14 @@ app.listen(3000,()=>{
 })
 
 
-app.get('/drinks/',(req,res) => {
+// app.get('/drinks/',(req,res) => {
+//     res.send(drinks)
+// })
+
+
+
+app.get('/drinks',(req,res) => {
     res.render('index',{
         alldrinks: drinks
     })
 })
-
-
-
-// app.get('/drinks',(req,res) => {
-//     res.render('index',{
-//         alldrinks: drinks
-//     })
-// })
