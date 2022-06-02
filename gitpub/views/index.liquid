@@ -17,7 +17,7 @@
     <br>
         <ul>
             {% for drink in allDrinks %}
-            <li>{{drink.name}}</li>
+            <li><a href="/drinks/{{ forloop.index0 }}">{{drink.name}}</a></li>
             {% endfor %}
         </ul>
 </br>
