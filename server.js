@@ -15,6 +15,10 @@ app.get('/drinks', (req, res) => {
     console.log(drinks)
 })
 
+app.get('/drinks/:id', (req, res) => {
+    res.send(req.params.id)
+})
+
 
 app.listen(port, () => {
     console.log("Pub has opened")
