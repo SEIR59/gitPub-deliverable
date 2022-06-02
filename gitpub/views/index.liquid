@@ -18,6 +18,10 @@
         font-size: 50px;
     }
 
+    h2 {
+        font-size: 40px;
+    }
+
     li {
         list-style: none;
         font-size: 30px;
@@ -25,10 +29,20 @@
 </style>
 <body>
     <h1>Welcome to gitPub!</h1>
+    <h2>Drinks</h2>
     <ul>
         {% for drink in allDrinks %}
         <li>
             <a href ="/drinks/{{forloop.index0}}">{{ drink.name | capitalize }}</a> 
+        </li>
+        {% endfor %}
+    </ul>
+        <br>
+    <h2>Food</h2>
+    <ul>
+        {% for food in allFoods %}
+        <li>
+            <a href ="/foods/{{forloop.index0}}">{{ food.name | capitalize }}</a> 
         </li>
         {% endfor %}
     </ul>
