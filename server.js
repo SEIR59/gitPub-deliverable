@@ -3,6 +3,7 @@ const app = require("liquid-express-views")(express())
 const port = 3000
 
 const drinks = require('./models/drinks.js')
+// drinks.image = drinks.image + ".png" not work?
 
 app.listen(port, () => {
     console.log(`port 3000 listening`)

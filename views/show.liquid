@@ -4,9 +4,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>More about drinks?</title>
+    <style>
+        body {
+            background-color: black;
+            color: cornsilk;
+        }
+    </style>
+    <title>foo bar</title>
 </head>
 <body>
-    <h1>Your drink choice is:</h1>
+    <h1>At foo bar</h1>
+    <h2>{{drink.name | capitalize}}</h2>
+    <img src="{{drink.image}}.png">
+    <h3>${{drink.price}}</h3>
+    <a href="/drinks">Back to gitPub</a>
 </body>
 </html>
