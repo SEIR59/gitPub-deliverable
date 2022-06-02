@@ -19,3 +19,7 @@ app.get("/drinks", (req, res) => {
       pub: drinks
   })
 })
+
+app.get("/drinks/:id", (req, res) => {
+    res.send(req.params.id)
+})
