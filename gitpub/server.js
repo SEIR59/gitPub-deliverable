@@ -14,6 +14,11 @@ app.get('/', (req, res) => {
 
 // drinks route as json
 app.get('/drinks', (req, res) => {
-        res.send(drinks)
-})
+        res.render(
+            'index',
+            {
+                allDrinks:drinks
+            }
+        );
+});
 
