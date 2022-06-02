@@ -11,7 +11,7 @@ app.get('/', (req, res) => {
 
 
 app.get('/drinks', (req, res) => {
-    res.render("index", { drinks });
+    res.render("index.liquid", {allDrinks: drinks });
 })
 
 
