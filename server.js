@@ -25,3 +25,4 @@ app.get('/drinks/:id',(req,res) => {
         req.params.id
     )
     })
+//Linking index.liquid to show.liquid   already did.
