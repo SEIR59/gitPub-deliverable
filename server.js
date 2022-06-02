@@ -15,11 +15,13 @@ app.get("/", (req, res) => {
 })
 
 app.get("/drinks", (req, res) => {
-  res.render('index', {
-      pub: drinks
+  res.render("index", {
+    pub: drinks,
   })
 })
 
 app.get("/drinks/:id", (req, res) => {
-    res.send(req.params.id)
+  res.render("show", {
+    bar: drinks[req.params.id],
+  })
 })
