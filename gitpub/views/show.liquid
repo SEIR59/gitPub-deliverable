@@ -11,10 +11,26 @@
     <style>
         body {
             color:blue;
-            background-color: bisque
+            background-color: bisque;
+            text-align: center;
+        }
+        h1 {
+            font-size: 60px;
+        
+        }
+
+        img{
+            width: 50%;
+            height: 50%;
         }
     </style>
-    <h1>Welcome to gitPub</h1>
+    <h1>At foo bar</h1>
+    <h2>{{drink.name}}</h2>
+     <img src="{{drinks.image}}.png">
+     <h3>${{drinks.price}}</h3>
+     <a href="/drinks">Back</a>
+    
+    
     <ul>
         {% for drink in allDrinks %}
         <li>style="text-transform:capitalize">
