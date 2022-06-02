@@ -14,6 +14,12 @@
 </head>
 <body>
     <h1>Welcome to the GitPub!</h1>
-    <h4>{{allDrinks}}</h4>
+    <br>
+        <ul>
+            {% for drink in allDrinks %}
+            <li>{{drink.name}}</li>
+            {% endfor %}
+        </ul>
+</br>
 </body>
 </html>
