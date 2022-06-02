@@ -13,5 +13,7 @@ app.get("/", (req, res) => {
 });
 
 app.get("/drinks", (req, res) => {
-  res.render("index");
+  res.render("index", {
+    allDrinks: drinks,
+  });
 });
