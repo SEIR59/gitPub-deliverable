@@ -9,9 +9,11 @@ app.get('/', (req, res) => {
 })
 
 app.get('/drinks', (req, res) => {
-    res.send(drinks)
+    res.render('index', {
+        drink: drinks
+    })
+    console.log(drinks)
 })
-
 
 
 app.listen(port, () => {

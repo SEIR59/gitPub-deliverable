@@ -32,21 +32,21 @@ Make a pub app that displays data inside server-side rendered views.
 
 **In terminal, inside your homework folder**:
 
-- fork and clone this repository into your `deliverables` folder
-- cd into this repo
-- `mkdir gitpub`
-- `cd gitpub`
-- `mkdir views`
-- `touch views/index.liquid views/show.liquid`
-- `mkdir models`
-- `touch models/drinks.js`
-- `touch server.js`
-- `touch .gitignore`
-- `npm init`
-  - follow the `npm init` prompts
-  - _thought question:_ does npm init create a file? if it does, where does it create it and what is the name of the file?
-- `code .`
-- add `node_modules` to `.gitignore`
+# - fork and clone this repository into your `deliverables` folder
+# - cd into this repo
+# - `mkdir gitpub`
+# - `cd gitpub`
+# - `mkdir views`
+# - `touch views/index.liquid views/show.liquid`
+# - `mkdir models`
+# - `touch models/drinks.js`
+# - `touch server.js`
+# - `touch .gitignore`
+# - `npm init`
+#   - follow the `npm init` prompts
+#   - _thought question:_ does npm init create a file? if it does, where does it create it and what is the name of the file?
+# - `code .`
+# - add `node_modules` to `.gitignore`
 
 **Make sure you did it right**:
 
@@ -63,10 +63,10 @@ If you just have one file, it could be argued that you don't need a folder for i
 
 **In terminal, install the necessary NPM packages**
 
-Remember, make sure you're in the same directory for the app you want to install the packages for!
+# Remember, make sure you're in the same directory for the app you want to install the packages for!
 
-- `npm i express liquid liquid-express-views`
-- <details><summary>check your package.json in VSCode to make sure they installed</summary><p>
+# - `npm i express liquid liquid-express-views`
+# - <details><summary>check your package.json in VSCode to make sure they installed</summary><p>
 
   ![](https://i.imgur.com/Kcz3uq5.png)
 
@@ -80,21 +80,21 @@ Remember, make sure you're in the same directory for the app you want to install
 
 **In `server.js`**
 
-- require express
+<!-- - require express
 - create the app object with liquid templating `const app = require("liquid-express-views")(express())`
 - set a variable of `port` to `3000`
 - set your app to `listen` to the port and include a `console.log()`, so that you can tell when your server is running
-- include a get route / that will `res.send('Welcome to the Gitpub App!');` so that when you got to `localhost:3000`, you will see `Welcome to the Gitpub App!`
+- include a get route / that will `res.send('Welcome to the Gitpub App!');` so that when you got to `localhost:3000`, you will see `Welcome to the Gitpub App!` -->
 
 **In terminal**
 
-- `nodemon` or `nodemon server.js` (if you set your up your `package.json` correctly to start `server.js` you don't need to put it after nodemon)
-- **Remember!** `nodemon` will only work if you run it from the same location as your `package.json`
+<!-- - `nodemon` or `nodemon server.js` (if you set your up your `package.json` correctly to start `server.js` you don't need to put it after nodemon)
+- **Remember!** `nodemon` will only work if you run it from the same location as your `package.json` -->
 
 **In the browser**
 
-- go to `localhost:3000` (or whatever port you set it to)
-- check that you have your `Welcome to the Gitpub App!` message displaying
+<!-- - go to `localhost:3000` (or whatever port you set it to)
+- check that you have your `Welcome to the Gitpub App!` message displaying -->
 
 > 🔴 _Don't forget to commit!_
 
@@ -102,9 +102,9 @@ Remember, make sure you're in the same directory for the app you want to install
 
 ### Setting up your "database"
 
-When setting up, you created a file called `drinks.js` in your `models` folder. For now, this will act as our "database".
+# When setting up, you created a file called `drinks.js` in your `models` folder. For now, this will act as our "database".
 
-**Inside `drinks.js`, paste the following data _as is_**
+# **Inside `drinks.js`, paste the following data _as is_**
 
 > You may notice that the image url's are missing a certain something, but this is _intentional!_ Do **not** directly edit any of the provided data inside your `drinks.js` file. We'll fix things programmatically!
 
@@ -153,9 +153,9 @@ const drinks = [
 ];
 ```
 
-- Set up your 'database' so that it can be exported to your `server.js` and then be required by your `server.js`
-- Set this 'database' to a variable called drinks in your `server.js` file
-- Create a get route `/drinks` that will `res.send(drinks)`, which will display your drinks data as json in the browser
+# - Set up your 'database' so that it can be exported to your `server.js` and then be required by your `server.js`
+# - Set this 'database' to a variable called drinks in your `server.js` file
+# - Create a get route `/drinks` that will `res.send(drinks)`, which will display your drinks data as json in the browser
 
 > 🔴 _Don't forget to commit!_
 
@@ -167,12 +167,12 @@ const drinks = [
 
 **In `index.liquid`**
 
-- Start with your HTML boilerplate
-- Add an `<h1>` that describes the page, i.e. `Welcome to gitPub`
-- Add a `<style>` tag so you can write some CSS _directly_ inside your `html` file.
-  - See more info [here](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/style)
-  - Wondering how you can connect a separate `.css` file? We'll learn about it later, or you can look at the Hungry for More section that will point you in the right direction to research!
-- Add a `background-color` and text `color` to to `body` so that you can ensure your css is working correctly
+<!-- - Start with your HTML boilerplate -->
+<!-- - Add an `<h1>` that describes the page, i.e. `Welcome to gitPub` -->
+<!-- - Add a `<style>` tag so you can write some CSS _directly_ inside your `html` file. -->
+  <!-- - See more info [here](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/style)
+  - Wondering how you can connect a separate `.css` file? We'll learn about it later, or you can look at the Hungry for More section that will point you in the right direction to research! -->
+<!-- - Add a `background-color` and text `color` to to `body` so that you can ensure your css is working correctly -->
 
   - <details><summary>For example:</summary><p>
 
@@ -187,8 +187,8 @@ const drinks = [
 
   </p></details>
 
-- Change your `/drinks` route to `res.render` your `index.liquid`
-- In your browser, go to `localhost:3000/drinks` to make sure you're rendering the `index.liquid` file!
+<!-- - Change your `/drinks` route to `res.render` your `index.liquid` -->
+<!-- - In your browser, go to `localhost:3000/drinks` to make sure you're rendering the `index.liquid` file! -->
 
 > 🔴 _Don't forget to commit!_
 
@@ -198,9 +198,9 @@ const drinks = [
 
 **In your `index.liquid`, make it so that you can see:\***
 
-- The name of each drink as a list item inside an unordered list
-- This list should be dynamically rendered by liquid based on your data from your 'database'
-- You'll notice the drink names aren't properly capitalized! Let's fix that! Manipulate the data programatically to capitalize the first letter of their names
+# - The name of each drink as a list item inside an unordered list
+# - This list should be dynamically rendered by liquid based on your data from your 'database'
+# - You'll notice the drink names aren't properly capitalized! Let's fix that! Manipulate the data programatically to capitalize the first letter of their names
 
 > 🔴 _Don't forget to commit!_
 
