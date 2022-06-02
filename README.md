@@ -210,9 +210,9 @@ const drinks = [
 
 **In `server.js`**
 
-- Add a new get route for `/drinks/:id`
+<!-- - Add a new get route for `/drinks/:id`
 - For now, just make sure it works correctly by havine the route `res.send(req.params.id)`
-  - So that when you go to `localhost:3000/drinks/whatever`, `whatever` should show up in the browser
+  - So that when you go to `localhost:3000/drinks/whatever`, `whatever` should show up in the browser -->
 
 > 🔴 _Don't forget to commit!_
 
@@ -222,8 +222,8 @@ const drinks = [
 
 **In `index.liquid`**
 
-- Make each listed drink a link that will go to the route `/drinks/x`, where 'x' is the array position of the drink in the data array. This should be set dynamically with liquid!
-- When you click the link, it show go to the show route and the index number corresponding to the drink's array position should be displayed
+# - Make each listed drink a link that will go to the route `/drinks/x`, where 'x' is the array position of the drink in the data array. This should be set dynamically with liquid!
+# - When you click the link, it show go to the show route and the index number corresponding to the drink's array position should be displayed
 
 > 🔴 _Don't forget to commit!_
 

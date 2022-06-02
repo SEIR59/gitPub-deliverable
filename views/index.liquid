@@ -19,9 +19,10 @@
 <body>
     <h1>Drinks on Tap</h1>
     <ul>
+        <!-- Create loop for each drink. Makes a li and upcase for each -->
         {% for drinks in drink %}
         <li>
-            {{drinks.name | upcase}}
+            <a href="/drinks/{{ forloop.index0 }}">{{drinks.name | upcase}}</a>
         </li>
         {%endfor%}
     </ul>
