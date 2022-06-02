@@ -7,17 +7,32 @@
     <title>Document</title>
     <style>
        body {
-           background-color: beige;
-           color: black;
+           background-color: cornflowerblue;
+           color: beige;
+           text-align: center;
+           font-size: 30px;
        } 
+       img {
+           border-color: beige;
+           border: 5px dotted;
+       }
+       ul {
+           display: inline-block;
+           list-style-type: none;
+       }
+       a {
+           color: beige;
+       }
     </style>
 </head>
 <body>
     <h1>Welcome to the GitPub!</h1>
+    <img src="https://s3.amazonaws.com/iexplore_web/images/assets/000/008/928/original/42_lounge.jpg?1453578118"></img>
     <br>
+    <h2>Our Drink Menu:</h2>
         <ul>
             {% for drink in allDrinks %}
-            <li><a href="/drinks/{{ forloop.index0 }}">{{drink.name}}</a></li>
+            <li><a href="/drinks/{{ forloop.index0 }}">{{drink.name | capitalize}}</a></li>
             {% endfor %}
         </ul>
 </br>
