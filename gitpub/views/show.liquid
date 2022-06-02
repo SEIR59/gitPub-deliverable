@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>gitPub App</title>
+    <style type="text/css">
+      body {
+        background-color: mintcream;
+        color: maroon;
+      }
+      ul {
+          color:blueviolet;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>At foo bar</h1>
+
+    <h2>{{ drink.name }}</h2>
+    <img src="{{ drink.image }}.png" alt="drink pic">
+    <h3>{{ drink.price }}</h3>
+
+    <a href="/drinks">Back</a>
+
+        {% for drink in allDrinks %}
+    <ul>
+      <li><a href="/drinks/{{ forloop.index0 }}">{{ drink.name | capitalize }}</a></li>
+        {% endfor %}
+    </ul>
+
+  </body>
+</html>
