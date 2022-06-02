@@ -4,6 +4,12 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Vast+Shadow&display=swap"
+      rel="stylesheet"
+    />
     <title>gitPub App</title>
     <style type="text/css">
       body {
@@ -11,24 +17,75 @@
         color: maroon;
       }
       ul {
-          color:blueviolet;
+        color: green;
+        margin: 0 auto;
+      }
+      .pics {
+        display: block;
+        margin-top: 50px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 450px;
+        height: 450px;
+        border-radius: 40px;
+      }
+
+      a:link {
+        text-decoration: none;
+      }
+      a:hover {
+        text-decoration: underline;
+      }
+      a:visited {
+          color: maroon;
+      }
+      h1 {
+        text-align: center;
+        font-size: 46px;
+        color: black;
+        font-family: "Vast Shadow", cursive;
+      }
+
+      h2 {
+        text-align: center;
+        font-size: 26px;
+        font-family: "Vast Shadow", cursive;
+      }
+      h3 {
+        text-align: center;
+        color: darkgreen;
+        font-size: 24px;
+        font-family: "Vast Shadow", cursive;
+        margin-top: 60px;
+      }
+      .back {
+        justify-content: center;
+        display: flex;
+        margin-top: 50px;
+        font-size: 20px;
+        font-family: "Vast Shadow", cursive;
+        font-weight: bold;
+        text-decoration-line: none;
+        
       }
     </style>
   </head>
   <body>
     <h1>At foo bar</h1>
 
-    <h2>{{ drink.name }}</h2>
-    <img src="{{ drink.image }}.png" alt="drink pic">
-    <h3>{{ drink.price }}</h3>
+    <h2>{{ drink.name | capitalize }}</h2>
+    <img src="{{ drink.image }}.png" class="pics" alt="drink pic" />
+    <h3>${{ drink.price }}.00</h3>
 
-    <a href="/drinks">Back</a>
-
-        {% for drink in allDrinks %}
+    <div class="back">
+      <a href="/drinks">Back</a>
+    </div>
+    {% for drink in allDrinks %}
     <ul>
-      <li><a href="/drinks/{{ forloop.index0 }}">{{ drink.name | capitalize }}</a></li>
-        {% endfor %}
+      <li>
+        <a href="/drinks/{{ forloop.index0 }}">{{ drink.name | capitalize }}</a>
+      </li>
+      {% endfor %}
     </ul>
-
   </body>
 </html>
