@@ -13,13 +13,22 @@
         body {
             color: black;
             background-color: bisque;
+            display: flex;
+            flex-direction: column;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            justify-content: center;
+            margin: 30px;
+        }
+        img {
+            max-width: 300px;
+            max-height: 300px;
         }
     </style>
 </head>
 <body>
-    <h1>At foo bar</h1>
+    <h1>Drink Up</h1>
     <h2>{{drinkId.name | upcase}}</h2>
-    <h3>{{drinkId.price}}</h3>
+    <h3>{{drinkId.price}} BTC</h3>
     <img src="{{drinkId.image}}.png">
     <ul>
         {% for drinks in drink %}
