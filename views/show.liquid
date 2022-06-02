@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitPub</title>
+    <style>
+        h1 {
+            text-align: center;
+            font-size: 50px;
+        }
+        body {
+            color: black;
+            background-color: bisque;
+        }
+    </style>
+</head>
+<body>
+    <h1>At foo bar</h1>
+    <h2>{{drinkId.name | upcase}}</h2>
+    <h3>{{drinkId.price}}</h3>
+    <img src="{{drinkId.image}}.png">
+    <ul>
+        {% for drinks in drink %}
+        <li>
+            <a href="/drinks/{{ forloop.index0 }}">{{drinks.name | upcase}}</a>
+        </li>
+        {%endfor%}
+        <a href="/drinks">Drink Selections</a>
+    </ul>
+</body>
+</html>

@@ -233,23 +233,23 @@ const drinks = [
 
 **In `show.liquid`**
 
-- Copy/paste your code from your `index.liquid` into your `show.liquid`
-  - surely, there must be a better way to not copy/paste; are you wondering if there is something in the hungry for more section about this?
-- Change all your html code inside your `show.liquid` file's `<body>` so that:
-  - Your `h1` tag says "At foo bar"
-  - There's an `h2` tag that should display the name of the drink
-  - There's an image tag that should display the image of the drink
-  - There's an `h3` tag that should display the price of the drink
-  - Add an anchor tag with the text of back, that will take you back to your index.liquid view
+<!-- - Copy/paste your code from your `index.liquid` into your `show.liquid` -->
+  <!-- - surely, there must be a better way to not copy/paste; are you wondering if there is something in the hungry for more section about this? -->
+<!-- - Change all your html code inside your `show.liquid` file's `<body>` so that: -->
+  <!-- - Your `h1` tag says "At foo bar" -->
+  <!-- - There's an `h2` tag that should display the name of the drink -->
+  <!-- - There's an image tag that should display the image of the drink -->
+  <!-- - There's an `h3` tag that should display the price of the drink -->
+  <!-- - Add an anchor tag with the text of back, that will take you back to your index.liquid view -->
 
 **In `server.js`**
 
-- Update the get route to render the `show` view with the drinks data
+<!-- - Update the get route to render the `show` view with the drinks data -->
 
-Oh no! If you check on the browser, the image is broken because in our database the image links don't have the `.png` ending, let's fix that programatically!
+<!-- Oh no! If you check on the browser, the image is broken because in our database the image links don't have the `.png` ending, let's fix that programatically! -->
 
-- Without going back to `the drinks.js` database file and editing it there, add on `.png` to the end of the drink's image data programatically
-  - _Thought question:_ Where should you do this? server.js or show.liquid? Or does it not matter, i.e. will either one work?
+<!-- - Without going back to `the drinks.js` database file and editing it there, add on `.png` to the end of the drink's image data programatically -->
+  <!-- - _Thought question:_ Where should you do this? server.js or show.liquid? Or does it not matter, i.e. will either one work? -->
 
 > 🔴 _Don't forget to commit!_
 
