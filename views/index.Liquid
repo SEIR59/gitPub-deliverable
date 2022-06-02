@@ -15,9 +15,11 @@
     </style>
     <h1>Welcome to gitPub</h1>
     <ul>
+      {% for drinks in pub %}
       <li>
-          {{ drinks.name }}
+        {{ drinks.name }}
       </li>
+      {% endfor %}
     </ul>
   </body>
 </html>
