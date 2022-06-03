@@ -1,0 +1,8 @@
+When re-opening this Deliverable to finish the project,
+I continously got error codes when running nodemon.
+
+This lead me to coding the rest of the deliverable in a seperate file,
+so if the commits arent all up to date when I push this project,
+Thats why.
+
+I've attached a photo of the error code from the Terminal.
