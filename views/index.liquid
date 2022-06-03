@@ -18,21 +18,13 @@
 
 <h1>Welcome to GitPub</h1>
 <body>
-
     <ul>
-        {%for drinks in allOfTheDrinks%}
-        <li>
-            <a href="/drinks/{{forloop.index0}}">{{drinks.name | capitalize}}
-            </a>
-        </li>
+        {%for drink in allOfTheDrinks%}
+            <li>
+                <a href="/drinks/{{forloop.index0}}">{{drink.name | capitalize}}
+                </a>
+            </li>
         {%endfor%}
     </ul>
-
-
-
-
-
-
-
 </body>
 </html>
