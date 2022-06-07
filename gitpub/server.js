@@ -15,11 +15,13 @@ app.get('/drinks', (req, res) => {
 })
 
 app.get('/drinks/:id', (req, res) => {
-    res.send('show',)
+    res.render ('show', {
     drink : drinks[req.params.id]
+})
 })
 
 
 app.listen(3000, () => {
 console.log("listening to port 3000")
 })
+

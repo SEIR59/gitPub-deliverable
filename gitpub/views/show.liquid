@@ -26,18 +26,11 @@
     </style>
     <h1>At foo bar</h1>
     <h2>{{drink.name}}</h2>
-     <img src="{{drinks.image}}.png">
-     <h3>${{drinks.price}}</h3>
+     <img src="{{drink.image}}.png">
+     <h3>${{drink.price}}</h3>
      <a href="/drinks">Back</a>
     
     
-    <ul>
-        {% for drink in allDrinks %}
-        <li>style="text-transform:capitalize">
-            <a href="/drinks/{{forloop.index0}}">{{drinks.name}}</a>
-
-        </li>
-        {%endfor%}
-    </ul>
+    
 </body>
 </html>
