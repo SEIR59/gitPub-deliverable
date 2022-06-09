@@ -202,6 +202,8 @@ const drinks = [
 - This list should be dynamically rendered by liquid based on your data from your 'database'
 - You'll notice the drink names aren't properly capitalized! Let's fix that! Manipulate the data programatically to capitalize the first letter of their names
 
+COME BACK TO THIS
+
 > 🔴 _Don't forget to commit!_
 
 ---
